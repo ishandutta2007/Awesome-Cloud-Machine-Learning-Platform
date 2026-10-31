@@ -32,79 +32,31 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global Cloud Machine Learning Platform market is estimated between **$114B and $135B in 2026** (scaling from ~$89B in 2025 at a ~30% CAGR), accelerated by widespread enterprise deployment of foundation models, agentic workflows, and cloud-scale GPU clusters.
+The sector exhibits a **barbell concentration dynamic**: foundational compute infrastructure and managed core services are highly consolidated among the top 3 hyperscalers (AWS, Microsoft Azure, Google Cloud), whereas the upper MLOps tooling, lakehouse data management, visual AutoML, and model observability layers remain **moderately fragmented** among specialized commercial vendors (Databricks, Snowflake, Dataiku, W&B) and rapidly emerging modular open-source stacks.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[AWS SageMaker](https://aws.amazon.com/sagemaker/)**
-
-  **End-to-end managed ML platform** covering labeling, training, tuning, deployment, monitoring, and governance. Named the **most-mentioned MLOps platform in 2026 job listings** . **Features**: Pipelines, Studio, Model Registry, Endpoints, Model Monitor, Feature Store, and Clarify—all integrated; deep AWS integration (IAM, S3, VPC, CloudWatch); **Bedrock and JumpStart** for foundation models and GenAI workloads; mature governance with model cards and lineage tracking for regulated industries . **Pricing**: Pay-as-you-go on compute, storage, and platform features; free tier available. **Free tier**: Yes, for experimentation. **Best for**: AWS-native organizations of any size needing full lifecycle coverage and compliance—**trade-off**: sprawling surface area; costs escalate if endpoint usage is not monitored .
-
-
-
-- **[Google Cloud Vertex AI](https://cloud.google.com/vertex-ai)**
-
-  **Unified ML and GenAI platform** built around foundation models from day one. **Gemini-first** with first-party access to Google's models; **Vertex Pipelines** (built on Kubeflow Pipelines) handle classical ML and LLM workflows; **Model Garden** for curated open and proprietary models; **strong AutoML** for teams without deep ML expertise . **Pricing**: Pay-as-you-go; training, prediction endpoints, and pipelines billed separately. **Free tier**: Limited trial credits. **Best for**: GCP-native organizations and teams building GenAI products on Gemini—**trade-off**: less mature than SageMaker on some governance fronts; GCP lock-in .
-
-
-
-- **[Azure Machine Learning](https://azure.microsoft.com/en-us/products/machine-learning)**
-
-  **Enterprise ML platform** with deep Azure DevOps integration and strong governance. **Governance is Azure's strongest differentiator** through Azure Policy; broad compliance certifications (ISO, SOC, HIPAA, GDPR) and responsible AI dashboards for fairness and interpretability . **Pipelines** can be designed in code or visually in ML Studio; retraining triggers from monitoring events; scales via AKS for deployment and distributed GPU/CPU clusters . **Pricing**: Quote-only; enterprise-oriented. **Free tier**: Limited trial. **Best for**: Microsoft-centric enterprises needing governance and DevOps integration—**trade-off**: efficiency optimized for Microsoft ecosystem; cross-cloud portability reduced .
-
-
-
-- **[Databricks Mosaic AI](https://www.databricks.com/product/machine-learning)**
-
-  **Lakehouse ML platform** unifying data engineering and ML on open formats. **MLflow 3.0** with GenAI features (prompt versioning, agent observability); **model serving** with 250K+ QPS throughput; **Feature Store** and **Unity Catalog** governance; **Mosaic AI** for custom LLM training, fine-tuning on proprietary data with managed serverless GPU clusters, and **Agent Bricks** for multi-step AI agents . **Pricing**: Consumption-based (DBUs). **Free tier**: Community Edition limited. **Best for**: code-first teams wanting open lakehouse architecture with deep ML and GenAI integration—**trade-off**: requires Databricks platform commitment .
-
-
-
-- **[Snowflake ML](https://www.snowflake.com/en/product/features/machine-learning/)**
-
-  **ML capabilities within the AI Data Cloud**, emphasizing low-code and in-database processing. **Snowpark for Python** for in-database data science and model training; **Native Model Registry** with first-class model objects and access control; **Snowpark Container Services (SPCS)** for GPU workloads and custom containers; **Cortex AI** with built-in SQL functions (AI_COMPLETE, AI_EXTRACT, AI_TRANSLATE, AI_SENTIMENT) GA November 2025 for text, image, audio, and video analysis . **Pricing**: Consumption-based (credits). **Free tier**: Trial credits. **Best for**: Snowflake customers wanting AI/ML without moving data outside the warehouse perimeter—**trade-off**: less flexible for custom ML workflows than Databricks .
-
-
-
-- **[DataRobot](https://www.datarobot.com/)**
-
-  **Enterprise AI platform** with automated machine learning and GenAI capabilities. **Pricing**: Quote-only. **Free tier**: Trial available. **Best for**: enterprises wanting AutoML with governance and deployment automation.
-
-
-
-- **[H2O.ai](https://h2o.ai/)**
-
-  **AI platform** with Driverless AI (AutoML) and H2O-3 open-source core. **Pricing**: Quote-only; H2O-3 is open source. **Free tier**: H2O-3 available. **Best for**: organizations wanting AutoML with an open-source foundation.
-
-
-
-- **[Dataiku](https://www.dataiku.com/)**
-
-  **Everyday AI platform** for collaborative data science and ML. **Pricing**: Quote-only; tiered by users. **Free tier**: Limited free edition. **Best for**: teams wanting a collaborative, visual interface for building ML pipelines.
-
-
-
-- **[Weights & Biases](https://wandb.ai/)**
-
-  **ML experiment tracking and MLOps platform** (now part of CoreWeave). **Pricing**: Free tier for personal use; paid by users. **Free tier**: Yes, for individuals. **Best for**: teams wanting best-in-class experiment tracking and visualization—**trade-off**: tracking focus, not a full ML platform.
-
-
-
-- **[Domino Data Lab](https://www.dominodatalab.com/)**
-
-  **Enterprise MLOps platform** for model development and deployment. **Pricing**: Quote-only. **Free tier**: None. **Best for**: regulated enterprises needing governed, reproducible ML workflows.
-
-
+| Platform | Company Scale (Valuation / Market Cap / Revenue) | Description & Key Strengths | Pricing (Starting Tier) | Free Tier / Trial Limits | Best For |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Azure Machine Learning](https://azure.microsoft.com/en-us/products/machine-learning)** | **~$3.1T** Market Cap (Microsoft) | Enterprise ML platform featuring comprehensive governance via Azure Policy, automated compliance (ISO, SOC, HIPAA, GDPR), ML Studio visual pipelines, and AKS cluster deployment. | Pay-as-you-go compute infrastructure only ($0 platform fee; compute starts at ~$0.04/hr for `Standard_B2s` / ~$0.29/hr for `Standard_DS3_v2`). | **$200 credit for 30 days** on sign-up; plus 12 months access to select free services (capped at 4 vCPUs quota on trial accounts). | Microsoft-centric enterprises needing rigid governance and automated Azure DevOps integration. |
+| **[Google Cloud Vertex AI](https://cloud.google.com/vertex-ai)** | **~$2.1T** Market Cap (Alphabet) | Unified ML and GenAI platform optimized for Gemini foundation models; Vertex Pipelines (Kubeflow-based), Model Garden, and native AutoML. | Pay-as-you-go by resource consumption (e.g., custom training from ~$0.056/node-hr; Gemini 1.5 Flash text output from ~$0.30 per 1M tokens; online prediction from ~$0.05/node-hr). | **$300 credit for 90 days** across Google Cloud (no always-free compute tier for Vertex AI endpoints; charges incur once credits expire). | GCP-native organizations building GenAI products on Gemini and foundation model workflows. |
+| **[AWS SageMaker](https://aws.amazon.com/sagemaker/)** | **~$2.0T** Market Cap (Amazon) | Comprehensive end-to-end managed ML platform covering data labeling, pipelines, training, Model Registry, Clarify governance, and Bedrock/JumpStart integration. | Pay-as-you-go based on compute/storage (e.g., `ml.t3.medium` notebooks from ~$0.05/hr; serverless inference from $0.00002/sec). | **2-month (60-day) Free Tier**: 250 hrs/mo `ml.t3.medium` notebooks, 50 hrs/mo `m4/m5.xlarge` training, 125 hrs/mo `m4/m5.xlarge` inference, and 150K serverless inference seconds. | AWS-native organizations requiring complete lifecycle governance and large-scale model deployments. |
+| **[Databricks Mosaic AI](https://www.databricks.com/product/machine-learning)** | **$190B** Valuation (Series L/M 2026; ~$7B ARR) | Lakehouse ML platform unifying data pipelines and ML; MLflow 3.0, Unity Catalog governance, high-throughput model serving, and Mosaic AI custom fine-tuning. | Pay-as-you-go consumption based on DBUs (Jobs compute from ~$0.15/DBU; All-Purpose / Model Serving compute from ~$0.55/DBU). | **Free Edition (perpetual)**: Serverless compute, 1 `2X-Small` SQL warehouse, up to 5 concurrent tasks, 3 apps (subject to daily fair usage caps); or **14-day evaluation trial** with **$400 in DBUs**. | Code-first data science and ML engineering teams committed to open lakehouse formats and MLflow. |
+| **[Snowflake ML](https://www.snowflake.com/en/product/features/machine-learning/)** | **~$50B** Market Cap (~$3.6B ARR) | In-database ML capabilities on the AI Data Cloud; Snowpark for Python, Native Model Registry, Snowpark Container Services (SPCS) for GPUs, and Cortex AI SQL functions. | Pay-as-you-go consumption based on Snowflake credits (Standard Edition starts at **$2.00 per credit**; Enterprise Edition at **$3.00 per credit**). | **30-day Free Trial with $400 in usage credits** (no credit card required; access expires when credits are depleted or 30 days elapse). | Snowflake-centric teams seeking to train and query ML/GenAI models directly inside the warehouse boundary. |
+| **[Dataiku](https://www.dataiku.com/)** | **$3.7B** Valuation (~$350M ARR) | Everyday AI platform designed for collaborative data science, visual drag-and-drop ML recipes, AutoML, code notebooks, and LLM Mesh routing. | Annual enterprise subscription; entry-tier business plans start at approximately **$4,000/month** (~$48,000/yr). | **Free Edition (perpetual)**: Self-hosted on local hardware for up to **3 users**; or a **14-day fully-managed cloud trial** with 4 CPUs / 32 GiB RAM provisioned. | Cross-functional teams pairing citizen data scientists with technical coders in a visual collaborative workspace. |
+| **[Weights & Biases](https://wandb.ai/)** | **$1.7B** Valuation / Acquired by CoreWeave | Specialized MLOps platform for experiment tracking, hyperparameter tuning (Sweeps), model registry, and LLM observability (Weave). | Team/Pro tier starts at **$50 to $60/user/month** (billed monthly); custom pricing for Enterprise. | **Free Forever Personal Tier**: 1 user, up to 5 model seats, **5 GB cloud storage/month**, 1 GB Weave tracing/month, capped at 50 requests/min. | Researchers and ML engineering teams wanting dedicated experiment tracking and deep training visualization. |
+| **[H2O.ai](https://h2o.ai/)** | **$1.7B** Valuation (~$75M ARR) | Enterprise automated ML platform featuring H2O Driverless AI, automated feature engineering, model explainability, and open-source H2O-3 core. | Annual enterprise license starting at approximately **$100,000 to $130,000/year** (or custom private offers on AWS/Azure Marketplace). | **21-day Free Trial License** for self-hosted or cloud evaluation of Driverless AI; or **2-hour interactive test drive** on H2O Aquarium cloud. | Enterprise predictive modeling teams prioritizing automated tabular modeling, compliance, and explainable AI. |
+| **[DataRobot](https://www.datarobot.com/)** | **$500M - $1B** Implied Valuation (~$285M ARR) | Enterprise AI platform specializing in automated machine learning (AutoML), GenAI playgrounds, and model governance/deployment automation. | Enterprise annual contracts starting at approximately **$24,000 to $50,000/year** for entry-level team scopes (median contracts ~$212,000/year). | **30-day Free Trial**: Shared modeling workers, batch predictions, up to 15 vector databases, and 1,000 LLM calls (no dedicated GPUs; no credit card required). | Organizations wanting automated end-to-end ML model creation and compliance guardrails without extensive custom code. |
+| **[Domino Data Lab](https://www.dominodatalab.com/)** | **$500M - $1B** Valuation (~$35M - $45M ARR) | Regulated enterprise MLOps platform offering hybrid/multi-cloud orchestration, reproducible project environments, and governed model deployment. | Custom enterprise quotes; entry commitments typically start in the **$30,000 to $50,000/year** range depending on user seats and VPC tier. | **14-day guided enterprise PoC / evaluation trial** upon sales request (or 2-week lab access via NVIDIA LaunchPad partnership with pre-allocated compute). | Highly regulated enterprise data science teams (pharma, banking, insurance) requiring reproducible and governed workflows. |
 
 ## Open-Source GitHub Projects
 

@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://github.com/ishandutta2007/Awesome-Cloud-Machine-Learning-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Machine-Learning-Platform?style=social" alt="GitHub Stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Cloud-Machine-Learning-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Machine-Learning-Platform?style=social" alt="GitHub_Stars" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Cloud-Machine-Learning-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Machine-Learning-Platform?style=social" alt="GitHub Forks" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Cloud-Machine-Learning-Platform/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Cloud-Machine-Learning-Platform" alt="GitHub Issues" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Cloud-Machine-Learning-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Cloud-Machine-Learning-Platform" alt="License" /></a>
@@ -77,7 +77,7 @@ The market exhibits a distinct **barbell concentration dynamic**:
 
 ## 🔓 Open-Source GitHub Projects
 
-*The following open-source frameworks and self-hosted ML infrastructure projects are sorted in **descending order by GitHub stargazers count**. Each project includes a live star badge linking directly to its GitHub stargazers page.*
+*The following open-source frameworks and self-hosted ML infrastructure projects are sorted in **descending order by GitHub stargazers count**. Each project includes a live Stars_Badge linking directly to its GitHub stargazers page.*
 
 ### 1. **[vLLM](https://github.com/vllm-project/vllm)** <a href="https://github.com/vllm-project/vllm/stargazers"><img src="https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white" alt="vLLM Stars" /></a>
 - **Description**: High-throughput, memory-efficient LLM inference and model serving engine powered by PagedAttention. Features continuous batching, chunked prefill, tensor parallelism, and OpenAI-compatible API serving.
@@ -231,7 +231,7 @@ Contributions are warmly welcome! To maintain high editorial and technical stand
 2. 🌿 **Create a new branch**: `git checkout -b feature/add-new-tool`.
 3. 📝 **Add your entry** under the appropriate section:
    - For **SaaS**: Include platform name, company scale, description, starting tier price, free tier limits, and best-for persona.
-   - For **Open-Source**: Include repository name, verified GitHub link, star badge, description, license, tech stack, and use-case focus.
+   - For **Open-Source**: Include repository name, verified GitHub link, Stars_Badge, description, license, tech stack, and use-case focus.
 4. 🚀 **Commit your changes**: `git commit -m "Add [Tool Name]"`.
 5. 📤 **Submit a Pull Request** with a concise technical explanation.
 
